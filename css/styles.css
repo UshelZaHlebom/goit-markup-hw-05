@@ -633,3 +633,26 @@ padding-bottom: 0;
     border-bottom: 1px solid #EEEEEE;
 }
 
+
+.pic-thumb{
+    position: relative;
+    overflow: hidden;
+}
+
+.pic-thumb-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--hub-color);
+    background-color: var(--major-color);
+    height: 100%;
+    line-height: 1.56;
+    font-size: 18px;
+    padding: 60px 40px;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+}
+
+.project-list-item:hover .pic-thumb-text{
+    transform: translate(0);
+}
