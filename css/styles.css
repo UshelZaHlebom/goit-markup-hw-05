@@ -156,6 +156,17 @@ section{
 
 .nav-panel-link.current{
     color:var(--major-color);
+    position: relative;
+}
+
+.nav-panel-link.current::after{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--major-color);
+    top: 44px;
 }
 
 .header-contacts{
@@ -369,12 +380,9 @@ padding-bottom: 0;
     flex-basis: calc(100%/3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    position: relative;
 }
 
-/*.examples-section{
-    background-color: palegreen;
-    padding-top: 0;
-}*/
 .examples-header{
     font-weight: 700;
     font-size: 36px;
@@ -382,6 +390,31 @@ padding-bottom: 0;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+}
+
+.examples-thumb{
+    position: relative;
+}
+
+.examples-thumb-text{
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+}
+
+.examples-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--background-color);
 }
 
 /*index team*/
