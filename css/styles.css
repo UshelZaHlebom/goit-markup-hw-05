@@ -656,3 +656,35 @@ padding-bottom: 0;
 .project-list-item:hover .pic-thumb-text{
     transform: translate(0);
 }
+
+.backdrop{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+}
+
+.modal{
+    position: absolute;
+    width: 528px;
+    min-height: 521px;
+    background-color:var(--hub-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-btn{
+    border: 1px solid #999999;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
